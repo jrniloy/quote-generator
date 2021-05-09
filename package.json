@@ -1,0 +1,22 @@
+{
+  "name": "quote-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrniloy/starter-template.git"
+  },
+  "author": "JR Niloy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrniloy/starter-template/issues"
+  },
+  "homepage": "https://github.com/jrniloy/starter-template#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

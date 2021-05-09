@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+
+$base: #0f1923;
+$white: #ece8e1;
+$pink: #ff4655;
+$height: 40px;
+$transition: 0.3s ease-out all;
+
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -13,7 +21,8 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .quote-container {
   width: auto;
@@ -21,25 +30,34 @@ body {
   padding: 20px 30px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2); }
-  .quote-container .quote-text {
-    font-size: 2.75rem; }
-  .quote-container .long-quote-text {
-    font-size: 2rem; }
-  .quote-container .fa-quote-left {
-    font-size: 4rem; }
-  .quote-container .quote-author {
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
+
+  .quote-text {
+    font-size: 2.75rem;
+  }
+
+  .long-quote-text {
+    font-size: 2rem;
+  }
+
+  .fa-quote-left {
+    font-size: 4rem;
+  }
+
+  .quote-author {
     margin-top: 15px;
     font-size: 2rem;
     font-weight: 400;
-    font-style: italic; }
-
+    font-style: italic;
+  }
+}
 .button-container {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  .button-container button {
+  align-items: center;
+
+  button {
     cursor: pointer;
     font-size: 1.2rem;
     height: 2.5rem;
@@ -50,16 +68,28 @@ body {
     outline: none;
     padding: 0.5rem 1.8rem;
     box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
-    transition: all 0.2s; }
-    .button-container button:hover {
-      transform: scale(1.02, 1.03); }
-    .button-container button:active {
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.02, 1.03);
+    }
+
+    &:active {
       transform: translateY(0.2rem);
-      box-shadow: 0 0.1rem rgba(121, 121, 121, 0.65); }
-    .button-container button.fa-twitter {
-      font-size: 1.5rem; }
-    .button-container button.twitter-button:hover {
-      color: #38a1f3; }
+      box-shadow: 0 0.1rem rgba(121, 121, 121, 0.65);
+    }
+
+    &.fa-twitter {
+      font-size: 1.5rem;
+    }
+
+    &.twitter-button:hover {
+      color: #38a1f3;
+    }
+  }
+}
+
+// Loader
 
 .loader {
   border: 16px solid #f3f3f3;
@@ -67,25 +97,35 @@ body {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 0.5s linear infinite; }
+  animation: spin 0.5s linear infinite;
+}
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   100% {
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
 
+// error message
 .error {
   color: #d8000c;
   background-color: #ffbaba;
-  background-image: url("https://i.imgur.com/GnyDvKN.png"); }
+  background-image: url("https://i.imgur.com/GnyDvKN.png"); 
+}
 
 .hidden {
-  display: none; }
+  display: none;
+}
 
 /* Media Querry */
 @media (max-width: 1000px) {
   .quote-container {
-    margin: auto 10px; }
+    margin: auto 10px;
+  }
   .quote-text {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem;
+  }
+}

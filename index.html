@@ -18,5 +18,34 @@
 
     <title>Quote Generator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="quote-container" id="quote-conatiner">
+      <!-- Quote -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+
+        <span id="quote"></span>
+      </div>
+
+      <!-- Author -->
+      <div class="quote-author">
+        <div id="author"></div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet this!">
+          <i class="fab fa-twitter"></i>
+        </button>
+
+        <button id="new-quote">New quote</button>
+      </div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+
+    <!-- error message -->
+    <div class="error hidden">Something went wrong! Please try again.</div>
+  </body>
 </html>
