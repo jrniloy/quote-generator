@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
 
-$base: #0f1923;
-$white: #ece8e1;
-$pink: #ff4655;
-$height: 40px;
-$transition: 0.3s ease-out all;
-
 html {
   box-sizing: border-box;
 }
@@ -113,7 +107,7 @@ body {
 .error {
   color: #d8000c;
   background-color: #ffbaba;
-  background-image: url("https://i.imgur.com/GnyDvKN.png"); 
+  background-image: url("https://i.imgur.com/GnyDvKN.png");
 }
 
 .hidden {
